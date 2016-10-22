@@ -3,10 +3,9 @@
 %text-base {
   font-weight: 300; 
   font-style: normal;
+  line-height: 2em;
   text-decoration: none;
   text-rendering: optimizeLegibility;
-  line-height: 2em;
-//  @include font-smoothing;  
 }
 
 %text-serif {
@@ -19,98 +18,102 @@
   font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", Osaka, sans-serif;
 }
 
-a, form, li, p, span, td, ul, h4, h5, time, input, textarea, footer {
-  @extend %text-sans-serif;
-  font-size: 14px;
-  color: #333;
+a, form, li, p, span, td, ul, h4, h5, h6, time, input, textarea {
+  @extend %text-serif;
+  font-size: 16px;
+  color: $color-dark;
+}
+
+h2 {
+  @extend %text-serif;
+  font-size: 24px;
+  color: $color-dark;
 }
 
 h3 {
-  @extend %text-sans-serif;
-  font-size: 16px;
-  color: #333;
+  @extend %text-serif;
+  font-size: 30px;
+  color: $color-dark;
 }
 
-h4 {
-  @extend %text-sans-serif;
-  font-size: 18px;
-  color: #333;
-}
+// Global header
 
-.index-editorial time {
-  font-size: 14px;
-}
-
-.footer-navigation {
+#header {
   a {
-    font-size: 13px;
-    color: #7a6a56;
+    font-size: 18px;
+    color: $color-neutral;
+  }
+  .header-logo {
+    color: transparent;
   }
 }
 
-.footer-company-info {
-  li {
-    color: #7a6a56;
-    &:first-child {
+// Top page
+
+#body-header {
+  .bh-title {
+    color: transparent;
+  }
+}
+
+#body-blog {
+  li, .bb-more a {
+    font-size: 12px;
+  }
+}
+
+#body-price {
+  h3 span {
+    font-size: 16px;
+  }
+  .bp-contact {
+    p {
+      line-height: 12px;
+    }
+    span {
+      @extend %text-sans-serif;
+      font-size: 16px;
+    }
+    .bp-tel {
       @extend %text-serif;
-      font-size: 20px; 
+      font-size: 36px;
     }
   }
 }
 
-.footer-copyright {
-  p {
-    font-size: 11px;
-    color: #fff;
-  }
-}
-
-// news.html, books.html
-
-.news-index, .books-index {
-  h3 a {
-    font-size: 19px;
-    color: #a48878;
-  }
-  h4 {
-    font-size: 14px;
-  }
-}
-
-.news-single {
+#body-intro {
   h3 {
-    font-size: 19px;
-    color: #a48878;
-  }
-  h4 {
-    font-size: 14px;
-    color: #333333;
+    font-size: 16px;
   }
 }
 
-.books-single {
-  h3 {
-    font-size: 20px;
-    color: #333333;
+// Blog page
+
+#blog-posts, #past-posts {
+  time {
+    font-size: 12px;
   }
-  h4 {
-    font-size: 14px;
-    color: #333333;
-    &:first-letter {
-      color: #c9caca;
-    }
-  }
-  h5 {
-    font-size: 14px;
+  h3, h3 a {
+    font-size: 24px;
   }
 }
 
-// elements
-
-.link-more {
-  color: #a48878;    
+#past-posts {
+  h4, h4 a {
+    line-height: 1.2em;
+  }
 }
 
-.underline {
-  text-decoration: underline;
+// Single page
+
+.bs-back a {
+  font-size: 12px;
+}
+
+// Global footer
+
+#colophon {
+  .scroll-top {
+    font-size: 12px;
+  }
 }

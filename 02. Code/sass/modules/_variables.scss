@@ -1,21 +1,7 @@
 // Color variables
 
-$color-text: #404040;
-$color-highlight: #8b4513;
-$color-border: #faebd7;
-$color-background: #fffaf0;
-$color-disabled: #8d8d8d;
-
-// Typography variables
-
-$font-size-title: 8.9rem;
-$font-size-heading: 3.4rem;
-$font-size-body: 1.3rem;
-
-// Sizing variables
-
-$width-contents: 1050px;
-$width-inner-contents: 610px;
-$width-menutag-contents: ($width-contents - (21 * 6)) / 3;
-$width-image: $width-contents / 3;
-$width-menutag-image: $width-menutag-contents - (21 * 2);
+$color-ylabel: rgb(238,186,67);
+$color-glabel: rgb(59,110,77);
+$color-dark: rgb(66, 63, 62);
+$color-neutral: rgb(107, 108, 108);
+$color-light: rgb(187, 188, 189);

@@ -1,0 +1,116 @@
+// Typography partial
+
+%text-base {
+  font-weight: 300; 
+  font-style: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  line-height: 2em;
+//  @include font-smoothing;  
+}
+
+%text-serif {
+  @extend %text-base;
+  font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "times new roman", serif; 
+}
+
+%text-sans-serif {
+  @extend %text-base;
+  font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", Osaka, sans-serif;
+}
+
+a, form, li, p, span, td, ul, h4, h5, time, input, textarea, footer {
+  @extend %text-sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+h3 {
+  @extend %text-sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+h4 {
+  @extend %text-sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+.index-editorial time {
+  font-size: 14px;
+}
+
+.footer-navigation {
+  a {
+    font-size: 13px;
+    color: #7a6a56;
+  }
+}
+
+.footer-company-info {
+  li {
+    color: #7a6a56;
+    &:first-child {
+      @extend %text-serif;
+      font-size: 20px; 
+    }
+  }
+}
+
+.footer-copyright {
+  p {
+    font-size: 11px;
+    color: #fff;
+  }
+}
+
+// news.html, books.html
+
+.news-index, .books-index {
+  h3 a {
+    font-size: 19px;
+    color: #a48878;
+  }
+  h4 {
+    font-size: 14px;
+  }
+}
+
+.news-single {
+  h3 {
+    font-size: 19px;
+    color: #a48878;
+  }
+  h4 {
+    font-size: 14px;
+    color: #333333;
+  }
+}
+
+.books-single {
+  h3 {
+    font-size: 20px;
+    color: #333333;
+  }
+  h4 {
+    font-size: 14px;
+    color: #333333;
+    &:first-letter {
+      color: #c9caca;
+    }
+  }
+  h5 {
+    font-size: 14px;
+  }
+}
+
+// elements
+
+.link-more {
+  color: #a48878;    
+}
+
+.underline {
+  text-decoration: underline;
+}

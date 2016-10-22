@@ -1,0 +1,285 @@
+/*
+Theme Name: Komichi
+Author: Providence Office
+Description: Komichi custom theme based on Twenty Fifteen WordPress theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: komichi
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+html, body {
+  margin: 0;
+}
+a, form, li, p, span, td, ul, h4, h5, input, textarea, footer {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(87,87,87);
+}
+td {
+  background-clip: padding-box !important;
+}
+article {
+  width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px 5px  rgba(0,0,0,0.2);
+}
+header {
+  width: 100%;
+  height: 119px;
+  background: url(css/img/otoiawase/header.gif) 0 0 no-repeat;
+  border-top: solid 4px rgb(6,39,94);
+}
+h1 {
+  margin: 0;
+  visibility: hidden;
+}
+#page-title-con {
+  width: 332px;
+  height: 46px;
+  margin: 40px auto;
+  background: url(css/img/otoiawase/title.gif) 0 0 no-repeat;
+}
+#page-title-est {
+  width: 332px;
+  height: 46px;
+  margin: 40px auto;
+  background: url(css/img/otoiawase/title_est.gif) 0 0 no-repeat;
+}
+form {
+  width: 860px;
+  margin: 0 auto;
+}
+form > table {
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+input, textarea {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.form-heading {
+  margin-bottom: 8px;
+}
+.form-title {
+  width: 244px;
+  height: 58px;
+  position: relative;
+  padding-left: 40px;
+  background: rgb(219,234,246);
+  border-top: solid 1px rgb(167,167,167);
+}
+.hissu:after {
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 35px;
+  height: 19px;
+  margin-top: -9.5px;
+  background: url(css/img/otoiawase/hissu.gif) 0 0 no-repeat;
+}
+.form-input {
+  width: 564px;
+  height: 58px;
+  padding-left: 16px;
+  border-top: solid 1px rgb(167,167,167);
+}
+.td-last {
+  border-bottom: solid 1px rgb(167,167,167);
+}
+.wpcf7-text {
+  height: 26px;
+  border: solid 1px rgb(167,167,167);
+}
+input[name=your-org],input[name=your-title],input[name=your-tel],input[name=your-fax] {
+  width: 238px;
+}
+input[name=your-name] {
+  width: 140px;
+}
+input[name=your-post],input[name=your-count],input[name=your-copies],input[name=your-charts] {
+  width: 90px; 
+}
+input[name=your-address],input[name=your-email],input[name=your-email_confirm] {
+  width: 436px;
+}
+.question-list {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-right: 20px;
+}
+textarea[name=your-question] {
+  width: 520px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: solid 1px rgb(167,167,167);
+}
+#privacy {
+  margin-bottom: 20px;
+  border: solid 1px rgb(167,167,167);
+}
+#privacy-title {
+  background: rgb(241,241,241);
+  border-bottom: solid 1px rgb(167,167,167);
+}
+#privacy-title th {
+  padding: 10px 15px 5px;
+  text-align: left;
+  font-weight: 300;
+}
+#privacy-text td {
+  display: block;
+  height: 130px;
+  overflow-y: scroll;
+  padding: 0 15px;
+}
+#privacy-text p, #privacy-text span {
+  font-size: 12px;
+}
+#submit-wrapper {
+  position: relative;
+  margin-bottom: 60px;
+}
+#submit-wrapper > p {
+  text-align: center;
+}
+#privacy-check {
+}
+.acceptance-check {
+  position: relative;
+  margin-right: 10px;
+}
+.check-accept:before {
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  width: 35px;
+  height: 19px;
+  margin-top: -9.5px;
+  background: url(css/img/otoiawase/hissu.gif) 0 0 no-repeat;
+}
+.form-button {
+  margin: 30px 0 0;
+}
+.form-back {
+  width: 122px;
+  height: 49px;
+  display: block;
+  margin: 0 auto;
+  background: url(css/img/otoiawase/modoru_off.gif) 0 0 no-repeat;
+  color: transparent;
+  border: none;
+}
+.form-back:hover {
+  background: url(css/img/otoiawase/modoru_on.gif) 0 0 no-repeat;
+  cursor: pointer;
+}
+.form-back:active {
+  background: url(css/img/otoiawase/modoru_on.gif) 0 0 no-repeat;
+  cursor: pointer;
+}
+.form-confirm {
+  width: 252px;
+  height: 71px;
+  display: block;
+  margin: 0 auto;
+  background: url(css/img/otoiawase/off.gif) 0 0 no-repeat;
+  color: transparent;
+  border: none;
+}
+.form-confirm:hover {
+  background: url(css/img/otoiawase/on.gif) 0 0 no-repeat;
+  cursor: pointer;
+}
+.form-confirm:active {
+  background: url(css/img/otoiawase/on.gif) 0 0 no-repeat;
+  cursor: pointer;
+}
+.form-send {
+  width: 215px;
+  height: 69px;
+  display: block;
+  margin: 0 auto;
+  background: url(css/img/otoiawase/soushin_off.gif) 0 0 no-repeat;
+  color: transparent;
+  border: none;
+}
+.form-send:hover {
+  background: url(css/img/otoiawase/soushin_on.gif) 0 0 no-repeat;
+  cursor: pointer;
+}
+.form-send:active {
+  background: url(css/img/otoiawase/soushin_on.gif) 0 0 no-repeat;
+  cursor: pointer;
+}
+#pre-footer {
+  color: rgb(96,76,79);
+  display: block;
+  font-size: 18px;
+  height: 45px;
+  line-height: 23.399999618530273px;
+  margin: 0;
+  padding: 20px 0 10px 40px;
+  text-align: left;
+  width: 960px;
+}
+#pre-footer > span {
+  color: rgb(96,76,79);
+  font-size: 14px;
+  vertical-align: top;
+}
+#footer {
+  background-color: rgb(6,39,94);
+  color: white;
+  display: block;
+  font-size: 13px;
+  height: 20px;
+  line-height: 20.799999237060547px;
+  margin: 0;
+  padding: 3px 0 10px;
+  text-align: center;
+  width: 100%;
+}
+.border-line {
+  border-top: solid 1px rgb(6,39,94);
+}
+#sent-wrapper {
+  width: 860px;
+  margin: 0 auto;
+}
+.sent-top-link {
+  text-decoration: none;
+  color: rgb(6,39,94);
+}
+
+/* plugin override */
+.wpcf7c-conf {
+  color: rgb(130,130,130);
+  background: rgb(225,225,225);
+}
+.wpcf7-validation-errors {
+  color: red;
+  text-align: center;
+  border: none !important;
+}
+.wpcf7-not-valid {
+  background: rgb(255,225,225);
+}
+.wpcf7-not-valid-tip {
+  display: none !important;
+}
+.wpcf7-mail-sent-ok {
+  display: none !important;
+}

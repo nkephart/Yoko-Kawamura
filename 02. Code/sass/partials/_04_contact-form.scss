@@ -1,0 +1,80 @@
+// Contact form partial
+
+.panel-contact {
+  width: 100%;
+  min-width: $width-contents;
+  background: #fafafa;
+  border-top: solid 1px $color-border;
+}
+
+#contact-table {
+  width: 100%;
+  .contact-td-l {
+    width: 50%;
+    margin: 0;
+    padding: 0 10.5px 13px 0;
+    text-align: right;
+  }
+  .contact-td-r {
+    width: 50%;
+    margin: 0;
+    padding: 0 0 13px 10.5px;
+    text-align: left;
+  }
+  input, textarea {
+    margin: 0;
+    padding: 5px 8px;
+    line-height: 1.615;
+    border: solid 1px $color-border;
+    @include border-radius(1px);
+    @include transition(all 0.5s ease-in-out)
+  }
+  #ss-submit {
+    overflow: hidden;
+    position: relative;
+    margin-top: 13px;
+    padding: 3px 13px;
+    background: $color-highlight;
+    color: #ffffff;
+    border: solid 1px $color-border;
+    @include border-radius(3px);
+    &:hover {
+      background: lighten($color-highlight, 3%);
+    }
+    &:active {
+      background: lighten($color-highlight, 10%);
+    }
+  }
+  .button-sent {
+    background: $color-highlight;
+    &:hover {
+      background: $color-highlight;
+    }
+    &:active {
+      background: $color-highlight;
+    }
+  }
+}
+
+@include keyframes(shake) {
+  0%, 100% {@include transform(translateX(0));}
+  17%, 50%, 83% {@include transform(translateX(-5px));}
+  33%, 67% {@include transform(translateX(5px));}
+}
+
+.button-shake {
+  @include animation-name(shake);
+  @include animation-duration(0.5s);
+}
+
+.form-input-warning {
+  background: lighten($color-border, 3%);
+}
+
+.form-input-sent {
+  color: $color-disabled;
+}
+
+.form-message-sent {
+  color: $color-highlight;
+}

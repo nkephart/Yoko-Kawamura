@@ -101,6 +101,10 @@ h3 {
 #colophon .scroll-top {
   font-size: 12px;
 }
+/* line 119, ../sass/partials/_02_typography.scss */
+#colophon li, #colophon li a {
+  line-height: 16px;
+}
 
 /* line 5, ../sass/partials/_03_structure.scss */
 *, *:before, *:after {
@@ -458,107 +462,116 @@ article {
 #blog-header .bh-inner {
   width: 100%;
   height: 130px;
+  padding: 12px 0;
   text-align: center;
 }
-/* line 314, ../sass/partials/_03_structure.scss */
+/* line 315, ../sass/partials/_03_structure.scss */
+#blog-header p {
+  margin: 0;
+}
+/* line 318, ../sass/partials/_03_structure.scss */
+#blog-header h2 {
+  margin-bottom: 12px;
+}
+/* line 321, ../sass/partials/_03_structure.scss */
 #blog-header .bh-image {
   width: 960px;
   height: 250px;
   background: url("css/img/blog.jpg") 0 0 no-repeat;
 }
 
-/* line 321, ../sass/partials/_03_structure.scss */
+/* line 328, ../sass/partials/_03_structure.scss */
 #blog-posts {
   float: left;
   width: 622px;
   margin-right: 12px;
   padding: 0 0 54px 54px;
 }
-/* line 326, ../sass/partials/_03_structure.scss */
+/* line 333, ../sass/partials/_03_structure.scss */
 #blog-posts .post {
   padding: 26px 0;
   border-bottom: solid 1px #423f3e;
 }
-/* line 329, ../sass/partials/_03_structure.scss */
+/* line 336, ../sass/partials/_03_structure.scss */
 #blog-posts .post:first-child {
   padding: 0 0 26px;
 }
-/* line 333, ../sass/partials/_03_structure.scss */
+/* line 340, ../sass/partials/_03_structure.scss */
 #blog-posts time {
   position: relative;
   margin-bottom: 26px;
 }
-/* line 338, ../sass/partials/_03_structure.scss */
+/* line 345, ../sass/partials/_03_structure.scss */
 #blog-posts .category-kiji time:before {
   content: "記事";
   top: -2px;
   left: 111px;
   background: #eeba43;
 }
-/* line 347, ../sass/partials/_03_structure.scss */
+/* line 354, ../sass/partials/_03_structure.scss */
 #blog-posts .category-jimusho time:before {
   content: "事務所";
   top: -2px;
   left: 111px;
   background: #3b6e4d;
 }
-/* line 355, ../sass/partials/_03_structure.scss */
+/* line 362, ../sass/partials/_03_structure.scss */
 #blog-posts h3 {
   width: 100%;
   border-bottom: solid 6px #fbfbfb;
 }
-/* line 359, ../sass/partials/_03_structure.scss */
+/* line 366, ../sass/partials/_03_structure.scss */
 #blog-posts p {
   margin: 0;
   padding: 12px 0 0;
 }
 
-/* line 365, ../sass/partials/_03_structure.scss */
+/* line 372, ../sass/partials/_03_structure.scss */
 #past-posts {
   float: left;
   width: 272px;
 }
-/* line 368, ../sass/partials/_03_structure.scss */
+/* line 375, ../sass/partials/_03_structure.scss */
 #past-posts h3 {
   width: 100%;
   border-bottom: solid 1px #423f3e;
 }
-/* line 372, ../sass/partials/_03_structure.scss */
+/* line 379, ../sass/partials/_03_structure.scss */
 #past-posts .post {
   padding: 12px 12px 18px;
   border-bottom: solid 1px #423f3e;
 }
-/* line 375, ../sass/partials/_03_structure.scss */
+/* line 382, ../sass/partials/_03_structure.scss */
 #past-posts .post:hover {
   background: #fbfbfb;
 }
-/* line 378, ../sass/partials/_03_structure.scss */
+/* line 385, ../sass/partials/_03_structure.scss */
 #past-posts .post:active {
   background: #fbfbfb;
 }
-/* line 382, ../sass/partials/_03_structure.scss */
+/* line 389, ../sass/partials/_03_structure.scss */
 #past-posts time {
   position: relative;
 }
-/* line 386, ../sass/partials/_03_structure.scss */
+/* line 393, ../sass/partials/_03_structure.scss */
 #past-posts .category-kiji time:before {
   content: "記事";
   top: -2px;
   left: 111px;
   background: #eeba43;
 }
-/* line 395, ../sass/partials/_03_structure.scss */
+/* line 402, ../sass/partials/_03_structure.scss */
 #past-posts .category-jimusho time:before {
   content: "事務所";
   top: -2px;
   left: 111px;
   background: #3b6e4d;
 }
-/* line 403, ../sass/partials/_03_structure.scss */
+/* line 410, ../sass/partials/_03_structure.scss */
 #past-posts ul {
   margin-top: 6px;
 }
-/* line 406, ../sass/partials/_03_structure.scss */
+/* line 413, ../sass/partials/_03_structure.scss */
 #past-posts li {
   height: 56px;
   display: inline-block;
@@ -567,38 +580,38 @@ article {
   *zoom: 1;
   *display: inline;
 }
-/* line 409, ../sass/partials/_03_structure.scss */
+/* line 416, ../sass/partials/_03_structure.scss */
 #past-posts li:first-child {
   margin-right: 6px;
 }
-/* line 413, ../sass/partials/_03_structure.scss */
+/* line 420, ../sass/partials/_03_structure.scss */
 #past-posts img {
   width: 102px;
   height: 56px;
 }
-/* line 417, ../sass/partials/_03_structure.scss */
+/* line 424, ../sass/partials/_03_structure.scss */
 #past-posts h4 {
   width: 134px;
 }
 
-/* line 424, ../sass/partials/_03_structure.scss */
+/* line 431, ../sass/partials/_03_structure.scss */
 #blog-single {
   padding: 0 154px 54px;
 }
-/* line 426, ../sass/partials/_03_structure.scss */
+/* line 433, ../sass/partials/_03_structure.scss */
 #blog-single .bs-back {
   display: block;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 435, ../sass/partials/_03_structure.scss */
+/* line 442, ../sass/partials/_03_structure.scss */
 #colophon {
   width: 100%;
   margin: 0 auto;
   padding: 0;
 }
-/* line 439, ../sass/partials/_03_structure.scss */
+/* line 446, ../sass/partials/_03_structure.scss */
 #colophon .scroll-top {
   display: block;
   width: 100%;
@@ -607,11 +620,36 @@ article {
   line-height: 54px;
   background: #fbfbfb;
 }
-/* line 447, ../sass/partials/_03_structure.scss */
+/* line 454, ../sass/partials/_03_structure.scss */
 #colophon .footer-contents {
   padding: 26px 0;
   text-align: center;
   background: #f6f2f8;
+}
+/* line 459, ../sass/partials/_03_structure.scss */
+#colophon .footer-nav {
+  margin-bottom: 12px;
+}
+/* line 462, ../sass/partials/_03_structure.scss */
+#colophon li {
+  position: relative;
+  margin-left: 12px;
+  padding-right: 12px;
+  border-right: solid 1px #423f3e;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 468, ../sass/partials/_03_structure.scss */
+#colophon li:first-child {
+  margin-left: 0;
+}
+/* line 471, ../sass/partials/_03_structure.scss */
+#colophon li:last-child {
+  padding-right: 0;
+  border: none;
 }
 
 /* line 3, ../sass/partials/_05_gvariables.scss */

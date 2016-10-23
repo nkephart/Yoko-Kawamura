@@ -309,7 +309,14 @@ article {
   .bh-inner {
     width: 100%;
     height: 130px;
+    padding: 12px 0;
     text-align: center;
+  }
+  p {
+    margin: 0;
+  }
+  h2 {
+    margin-bottom: 12px;
   }
   .bh-image {
     width: 960px;
@@ -448,5 +455,22 @@ article {
     padding: 26px 0;
     text-align: center;
     background: rgb(246,242,248);
+  }
+  .footer-nav {
+    margin-bottom: 12px;
+  }
+  li {
+    position: relative;
+    margin-left: 12px;
+    padding-right: 12px;
+    border-right: solid 1px $color-dark;
+    @include inline-block;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      border: none;
+    }
   }
 }

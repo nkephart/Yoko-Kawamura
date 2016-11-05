@@ -16,7 +16,7 @@ get_header(); ?>
         <section id="blog-header">
           <div class="bh-inner">
             <h2>日々のBLOG</h2>
-            <span>コメント</span>
+            <p>よくあるご相談や、争いになりやすい事柄についての記事を掲載しています。</p>
           </div>
           <div class="bh-image"></div>
         </section>

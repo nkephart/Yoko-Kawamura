@@ -53,70 +53,60 @@ h3 {
 }
 
 /* line 61, ../sass/partials/_02_typography.scss */
-#body-blog time, #body-blog a {
-  letter-spacing: 0;
-}
-/* line 64, ../sass/partials/_02_typography.scss */
 #body-blog li, #body-blog .bb-more a {
   font-size: 12px;
 }
 
-/* line 70, ../sass/partials/_02_typography.scss */
+/* line 67, ../sass/partials/_02_typography.scss */
 #body-price h3 span {
   font-size: 16px;
 }
-/* line 74, ../sass/partials/_02_typography.scss */
+/* line 71, ../sass/partials/_02_typography.scss */
 #body-price .bp-contact p {
   line-height: 12px;
 }
-/* line 77, ../sass/partials/_02_typography.scss */
+/* line 74, ../sass/partials/_02_typography.scss */
 #body-price .bp-contact span {
   font-size: 16px;
 }
-/* line 81, ../sass/partials/_02_typography.scss */
+/* line 78, ../sass/partials/_02_typography.scss */
 #body-price .bp-contact .bp-tel {
   font-size: 36px;
 }
 
-/* line 89, ../sass/partials/_02_typography.scss */
+/* line 86, ../sass/partials/_02_typography.scss */
 #body-intro h3 {
   font-size: 16px;
 }
-/* line 92, ../sass/partials/_02_typography.scss */
+/* line 89, ../sass/partials/_02_typography.scss */
 #body-intro td {
   font-size: 14px;
 }
 
-/* line 100, ../sass/partials/_02_typography.scss */
+/* line 97, ../sass/partials/_02_typography.scss */
 #blog-posts time, #past-posts time {
   font-size: 12px;
-  letter-spacing: 0;
 }
-/* line 104, ../sass/partials/_02_typography.scss */
+/* line 100, ../sass/partials/_02_typography.scss */
 #blog-posts h3, #blog-posts h3 a, #past-posts h3, #past-posts h3 a {
   font-size: 24px;
 }
 
-/* line 110, ../sass/partials/_02_typography.scss */
-#past-posts time {
-  letter-spacing: 0;
-}
-/* line 113, ../sass/partials/_02_typography.scss */
+/* line 106, ../sass/partials/_02_typography.scss */
 #past-posts h4, #past-posts h4 a {
   line-height: 1.2em;
 }
 
-/* line 120, ../sass/partials/_02_typography.scss */
+/* line 113, ../sass/partials/_02_typography.scss */
 .bs-back a {
   font-size: 12px;
 }
 
-/* line 127, ../sass/partials/_02_typography.scss */
+/* line 120, ../sass/partials/_02_typography.scss */
 #colophon .scroll-top {
   font-size: 12px;
-  letter-spacing: 0;
 }
-/* line 131, ../sass/partials/_02_typography.scss */
+/* line 123, ../sass/partials/_02_typography.scss */
 #colophon li, #colophon li a {
   line-height: 16px;
 }
@@ -606,7 +596,7 @@ article {
 }
 /* line 424, ../sass/partials/_03_structure.scss */
 #past-posts h4 {
-  width: 133px;
+  width: 134px;
 }
 
 /* line 431, ../sass/partials/_03_structure.scss */

@@ -22,7 +22,7 @@ get_header(); ?>
 
         <section id="body-blog">
           <h2 rel="bookmark">日々のBLOG</h2>
-          <p class="bb-text">よくある問題や、争いになりやすい事柄についての記事を掲載しております。</p>
+          <p class="bb-text">よくあるご相談や、争いになりやすい事柄についての記事を掲載しています。</p>
           <ul>
             <?php
               $args = array(
@@ -54,7 +54,7 @@ get_header(); ?>
             </li>
             <li>
               <h3>問題整理からお手伝いします</h3>
-              <p>いろいろなことが不安で、何を考えればいいのかわからない場合も、<br />「何に不安を感じているのか」「その不安はどうすれば解決できるのか」を、<br />法律面だけでなく、いろいろな方面の情報を提供し、<br />相談者の方と一緒に問題を整理して、解決していきます。</p>
+              <p>いろいろなことが不安で、何をどう考えればいいのかわからなくなっておられる方や、<br />悩まなくてもいいことで悩んでおられる方が、大勢おられます。<br />「何に不安を感じているのか」「その不安はどうすれば解決できるのか」<br />当事務所では、法律面からポイントを整理し、あわせて、いろいろな方面の情報を提供し、<br />相談者の方と一緒に問題を整理して、解決していきます。</p>
             </li>
           </ul>
         </section>
@@ -62,7 +62,7 @@ get_header(); ?>
         <section id="body-price">
           <h2 rel="bookmark">ご相談方法と費用</h2>
           <div class="bp-fee">
-            <h3>法律相談料&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30分&nbsp;&nbsp;&nbsp;5,000<span>（税別）</span></h3>
+            <h3>法律相談料&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30分&nbsp;&nbsp;&nbsp;5,000円<span>（税別）</span></h3>
             <hr>
             <p>事件としてご依頼いただく場合の費用につきましては、<br />精査の上、ご依頼者と協議して決めさせていただきます。</p>
           </div>
@@ -123,6 +123,7 @@ get_header(); ?>
             <li>奈良市登大路町5番地&nbsp;修徳ビル402号</li>
             <li>連絡先&nbsp;&nbsp;TEL:0742-22-5365&nbsp;&nbsp;FAX:0742-22-5367</li>
             <li>受付時間：月曜日〜金曜日&nbsp;&nbsp;午前9時〜午後5時</li>
+            <li>来所のさいは、お電話でご予約ください</li>
           </ul>
         </section>
 
@@ -131,7 +132,7 @@ get_header(); ?>
           <div class="ba-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7620153145162!2d135.82805331502345!3d34.68595539151589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600139871d325031%3A0x72e79284907eabb9!2z5bed5p2R5a655a2Q5rOV5b6L5LqL5YuZ5omA!5e0!3m2!1sja!2sjp!4v1477133658693" width="720" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
-          <p>奈良駅より徒歩5分</p>
+          <p>近鉄奈良駅より徒歩5分</p>
         </section>
       </article>
     </main><!-- .site-main -->

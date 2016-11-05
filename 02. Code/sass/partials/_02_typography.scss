@@ -6,6 +6,7 @@
   line-height: 2em;
   text-decoration: none;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.8px;
 }
 
 %text-serif {
@@ -57,6 +58,9 @@ h3 {
 }
 
 #body-blog {
+  time, a {
+    letter-spacing: 0;
+  }
   li, .bb-more a {
     font-size: 12px;
   }
@@ -85,6 +89,9 @@ h3 {
   h3 {
     font-size: 16px;
   }
+  td {
+    font-size: 14px;
+  }
 }
 
 // Blog page
@@ -92,6 +99,7 @@ h3 {
 #blog-posts, #past-posts {
   time {
     font-size: 12px;
+    letter-spacing: 0;
   }
   h3, h3 a {
     font-size: 24px;
@@ -99,6 +107,9 @@ h3 {
 }
 
 #past-posts {
+  time {
+    letter-spacing: 0;
+  }
   h4, h4 a {
     line-height: 1.2em;
   }
@@ -115,6 +126,7 @@ h3 {
 #colophon {
   .scroll-top {
     font-size: 12px;
+    letter-spacing: 0;
   }
   li, li a {
     line-height: 16px;

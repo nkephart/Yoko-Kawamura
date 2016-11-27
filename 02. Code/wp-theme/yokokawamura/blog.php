@@ -40,31 +40,67 @@ get_header(); ?>
               the_content(); ?>
             </div>
           <?php endwhile; ?>
+          <nav class="pagination">
+            <ul>
+              <li class="pagi-prev"><?php previous_posts_link('&lang;&nbsp;前のページ'); ?>
+              </li><li class="pagi-home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="ホーム" rel="home">ホーム</a>
+              </li><li class="pagi-next"><?php next_posts_link('次のページ&nbsp;&rang;'); ?></li>
+            </ul>
+          </nav>
         </section>
 
-        <aside id="past-posts">
-          <h3>これまでの記事</h3>
-          <?php
-            $args = array(
-              'post_type' => 'post',
-              'posts_per_page' => '5',
-              'paged' => $paged
-            );
-          ?>
-          <?php query_posts( $args ); ?>
+        <aside>
+          <section id="latest-posts">
+            <h3>最新の記事</h3>
+            <?php
+              $args = array(
+                'post_type' => 'post',
+                'posts_per_page' => '5',
+                'paged' => '1'
+              );
+            ?>
+            <?php query_posts( $args ); ?>
 
-          <?php
-            $loop = new WP_Query('page_id='.$post->ID);
-            while ( have_posts() ) : the_post();
-          ?>
-          <div id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?>>
-            <time><?php the_time('Y年m月d日'); ?></time>
+            <?php
+              $loop = new WP_Query('page_id='.$post->ID);
+              while ( have_posts() ) : the_post();
+            ?>
+            <div id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?>>
+              <time><?php the_time('Y年m月d日'); ?></time>
+              <ul>
+                <li><?php twentysixteen_post_thumbnail(); ?></li>
+                <li><?php the_title( sprintf( '<h4><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?></li>
+              </ul>
+            </div>
+            <?php endwhile; ?>
+          </section>
+<!--
+          <section id="category-posts">
+            <h3>カテゴリー</h3>
             <ul>
-              <li><?php twentysixteen_post_thumbnail(); ?></li>
-              <li><?php the_title( sprintf( '<h4><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?></li>
+              <li class="category-kiji">記事&hellip;()</li>
+              <li class="category-jimusho">事務所&hellip;()</li>
+              <li class="category-others">その他&hellip;()</li>
             </ul>
-          </div>
-          <?php endwhile; ?>
+          </section>
+-->
+          <section id="archive-posts">
+            <h3>月別アーカイブ</h3>
+            <?php
+              $args = array(
+                'type' => 'monthly',
+                'limit' => '12',
+                'format' => 'custom',
+                'before' => '<li>&middot;&nbsp;',
+                'after' => '</li>',
+                'show_post_count' => true,
+                'post_type' => 'post'
+              );
+            ?>
+            <ol>
+              <?php wp_get_archives( $args ); wp_reset_postdata(); wp_reset_query(); ?>
+            </ol>
+          </section>
         </aside>
       </article>
     </main><!-- .site-main -->

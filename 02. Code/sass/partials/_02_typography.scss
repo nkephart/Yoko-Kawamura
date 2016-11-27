@@ -11,12 +11,12 @@
 
 %text-serif {
   @extend %text-base;
-  font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "times new roman", serif; 
+  font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "Times New Roman", serif; 
 }
 
 %text-sans-serif {
   @extend %text-base;
-  font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", Osaka, sans-serif;
+  font-family: "Hiragino Sans W2", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
 }
 
 a, form, li, p, span, td, ul, h4, h5, h6, time, input, textarea {
@@ -96,7 +96,17 @@ h3 {
 
 // Blog page
 
-#blog-posts, #past-posts {
+#blog-header {
+  h2 {
+    line-height: 75px;
+    color: #ffffff;
+  }
+  p {
+    line-height: 48px;
+  }
+}
+
+#blog-posts, aside {
   time {
     font-size: 12px;
     letter-spacing: 0;
@@ -104,14 +114,25 @@ h3 {
   h3, h3 a {
     font-size: 24px;
   }
+  .pagination a {
+    font-size: 12px;
+  }
 }
 
-#past-posts {
-  time {
-    letter-spacing: 0;
+aside {
+  h3 {
+    line-height: 33px;
+    letter-spacing: 2.4px;
+    color: #ffffff;
   }
   h4, h4 a {
     line-height: 1.2em;
+  }
+}
+
+#archive-posts {
+  li, li a {
+    font-size: 12px;
   }
 }
 

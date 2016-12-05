@@ -24,19 +24,24 @@ get_header(); ?>
           <h2 rel="bookmark">日々のBLOG</h2>
           <p class="bb-text">よくあるご相談や、争いになりやすい事柄についての記事を掲載しています。</p>
           <ul>
-            <?php
-              $args = array(
-                'post_type' => 'post',
-                'posts_per_page' => '5'
-              );
-            ?>
-            <?php query_posts( $args ); ?>
-            <?php while ( have_posts() ) : the_post(); ?>
+          <?php
+          global $post;
+          $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => '5'
+          );
+          $loop = get_posts( $args );
+
+          foreach( $loop as $post ) {
+            setup_postdata( $post );
+          ?>
             <li <?php post_class(); ?>>
               <time><?php the_time('Y年m月d日'); ?></time>
               <?php the_title( sprintf( '<a href="%s">', esc_url( get_permalink() ) ), '</a>' ); ?>
             </li>
-            <?php endwhile; wp_reset_postdata(); wp_reset_query(); ?>
+          <?php
+          } wp_reset_postdata();
+          ?>
           </ul>
           <span class="bb-more"><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>" rel="next">&rang;&nbsp;詳しくはこちら</a></span>
         </section>

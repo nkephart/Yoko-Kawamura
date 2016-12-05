@@ -419,3 +419,11 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
+
+/**
+ * Modify <!-- more --> tag
+ */
+function modify_read_more_link() {
+    return '<a class="link-more" href="' . get_permalink() . '">&hellip;&nbsp;&lang;&nbsp;続きを読む&nbsp;&rang;</a>';
+}
+add_filter( 'the_content_more_link', 'modify_read_more_link' );

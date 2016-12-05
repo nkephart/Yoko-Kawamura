@@ -106,26 +106,51 @@ h3 {
   }
 }
 
-#blog-posts, aside {
+#blog-posts {
+  h3, h3 a {
+    @extend %text-sans-serif;
+    font-size: 24px;
+  }  
+}
+
+#blog-posts, #single-posts, aside {
   time {
     font-size: 12px;
     letter-spacing: 0;
   }
-  h3, h3 a {
-    font-size: 24px;
-  }
-  .pagination a {
-    font-size: 12px;
-  }
 }
+
+a.link-more {
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+// Single page
+
+#single-posts {
+  h2, h2 a {
+    @extend %text-sans-serif;
+    font-size: 24px;
+  }  
+}
+
+// Pagination
+
+.pagination a {
+  font-size: 12px;
+}
+
+// Sidebar
 
 aside {
   h3 {
     line-height: 33px;
     letter-spacing: 2.4px;
     color: #ffffff;
+    font-size: 20px;
   }
   h4, h4 a {
+    @extend %text-sans-serif;
     line-height: 1.2em;
   }
 }
@@ -134,12 +159,6 @@ aside {
   li, li a {
     font-size: 12px;
   }
-}
-
-// Single page
-
-.bs-back a {
-  font-size: 12px;
 }
 
 // Global footer

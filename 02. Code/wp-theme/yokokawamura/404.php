@@ -9,26 +9,20 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+  <main id="main" class="site-main" role="main">
+    <article>
+      <section id="body-header">
+        <div class="bh-bg">
+          <div class="bh-catch"></div>
+        </div>
+        <h1 class="bh-title"></h1>
+      </section>
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentysixteen' ); ?></h1>
-				</header><!-- .page-header -->
+      <section id="body-404">
+        <h2>お探しのページが見つかりません</h2>
+        <p>ページ上下のナビゲーションから移動してください。
+      </section>
+    </article>
+  </main><!-- .site-main -->
 
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentysixteen' ); ?></p>
-
-					<?php get_search_form(); ?>
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- .site-main -->
-
-		<?php get_sidebar( 'content-bottom' ); ?>
-
-	</div><!-- .content-area -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
